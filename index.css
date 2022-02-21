@@ -1,0 +1,329 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    top: -5px;
+    opacity: 0.85;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+nav span{
+    color: white;
+    position: absolute;
+    top: 40%;
+    padding-left: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding-right: 20px;
+    padding-top: 5px; 
+}
+
+nav ul li{
+    list-style-type: none;
+    color: white;
+    padding-right: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    padding-top: 55px;
+}
+
+#intro img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#about{
+    margin-top: 50px;
+}
+
+#about h2{
+    text-align: center;
+}
+
+#cheta-picture{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cheta-picture img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#description{
+    margin-top: 30px;
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#description p{
+    line-height: 1.5em;
+}
+
+#passion{
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+#passion #areas-of-interest{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
+    
+    
+}
+
+#passion h2{
+    text-align: center;
+    padding-top: 30px;
+}
+
+#areas-of-interest{
+    text-align: center;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icons-for-areas-of-interest{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    position: relative;
+     
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.icons-for-areas-of-interest i.fa{
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+     
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#areas-of-interest p{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+     
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#experience{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#experience p{
+    width: 700px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+}
+
+#technologies{
+    margin-top: 30px;
+}
+
+#technologies li{
+    list-style-type: none;
+}
+
+#technologies li img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+#technologies ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#work{
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#work h2{
+    text-align: center;
+}
+
+#work li{
+    list-style-type: none;
+}
+
+#work ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#work ul li{
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 300px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#work ul li h3{
+    text-align: center;
+}
+
+#work ul li img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+#work ul li p{
+    text-align: center;
+    cursor: pointer;
+}
+
+#work ul li p a{
+    text-decoration: none;
+    color: black;
+}
+
+#contact{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#contact p{
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 1000px){  
+    #work ul li{
+        width: 250px;
+    }
+    
+    #work ul li img{
+        width: 250px;
+    }
+
+    #contact{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #work ul{
+        grid-template-columns: 1fr;
+    }
+    
+    #work ul li{
+        width: 350px;
+    }
+    
+    #work ul li img{
+        width: 350px;
+        height: 500px;
+    }
+
+    #description{
+        width: 90%;
+    }
+
+    nav ul{
+        width: 100%; 
+    }
+
+    nav img{
+       display: none 
+    }
+    
+    nav span{
+       display: none; 
+    }
+}
+
+@media screen and (max-width: 499px){
+    nav ul{
+        width: 90%;
+        padding-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #technologies ul{
+        margin-left: -25px;
+    }
+
+    #work ul li{
+        width: 90%;
+        margin-left: -10px;
+    }
+    
+    #work ul li img{
+        width: 100%;
+    } 
+}
